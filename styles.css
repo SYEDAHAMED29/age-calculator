@@ -1,0 +1,133 @@
+:root {
+   --purple: hsl(259, 100%, 65%);
+   --lightRed: hsl(0, 100%, 67%);
+   --white: hsl(0, 0%, 100%);
+   --offWhite: hsl(0, 0%, 94%);
+   --lightGrey: hsl(0, 0%, 86%);
+   --smokeyGrey: hsl(0, 1%, 44%);
+   --offBlack: hsl(0, 0%, 8%);
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   background-color: var(--lightGrey);
+   margin: 0;
+   padding: 0;
+}
+
+section {
+   width: 500px;
+   height: 450px;
+   background-color: var(--white);
+   padding: 2rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 1rem 1rem 8rem 1rem;
+}
+img {
+   background-color: var(--purple);
+   border-radius: 50%;
+   padding: 1rem;
+   cursor: pointer;
+}
+
+img:hover {
+   background-color: var(--offBlack);
+}
+
+input {
+   width: 100px;
+   height: 50px;
+   font-size: 2rem;
+   border: 1px solid var(--lightGrey);
+   border-radius: 0.5rem;
+   text-decoration: none;
+   color: var(--offBlack);
+   font-weight: bolder;
+   margin: 0;
+   padding: 0.3rem 0 0.3rem 1.5rem;
+}
+
+input:focus {
+   border: 1px solid var(--purple);
+   outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+}
+
+p {
+   font-size: 0.8rem;
+   font-weight: 400;
+   color: var(--smokeyGrey);
+}
+
+h1 {
+   font-size: 4rem;
+   font-weight: 800;
+   font-style: italic;
+   margin: 0;
+   padding: 0;
+}
+.container-1 {
+   display: flex;
+   flex-direction: row;
+   gap: 1.5rem;
+}
+.container-2 {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.container-2 hr {
+   flex-grow: 1;
+   height: 1px;
+   background-color: var(--lightGrey);
+   margin-right: 0px;
+}
+
+.container-2 img {
+   margin-left: auto;
+}
+#validDay,
+#validMonth,
+#validYear {
+   font-style: italic;
+   font-weight: 400;
+}
+
+.error-para {
+   color: var(--lightRed);
+}
+
+.error-input {
+   border: 1px solid var(--lightRed);
+}
+
+.container-3 {
+   line-height: 5rem;
+}
+span {
+   color: var(--purple);
+}
+
+@media only screen and (max-width: 480px) {
+   section {
+      width: 90%;
+      margin: 1rem;
+   }
+   input {
+      width: 80px;
+      height: 50px;
+      font-size: 1rem;
+      padding: 0.1rem 0 0.1rem 1.2rem;
+   }
+   h1 {
+      font-size: 3.5rem;
+   }
+}

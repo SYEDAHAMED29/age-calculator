@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+      <title>Frontend Mentor | Age calculator app</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <section>
+         <div class="container-1">
+            <div class="day">
+               <p class="validity-day">D A Y</p>
+               <input type="number" id="birth-day" placeholder="DD" />
+               <p class="validity-day" id="validDay"></p>
+            </div>
+            <div class="month">
+               <p class="validity-month">M O N T H</p>
+               <input type="number" name="" id="birth-month" placeholder="MM" />
+               <p class="validity-month" id="validMonth"></p>
+            </div>
+            <div class="year">
+               <p class="validity-year">Y E A R</p>
+               <input type="number" name="" id="birth-year" placeholder="YYYY" />
+               <p class="validity-year" id="validYear"></p>
+            </div>
+         </div>
+         <div class="container-2">
+            <hr />
+            <img id="btn" src="./assets/images/icon-arrow.svg" alt="" />
+         </div>
+         <div class="container-3">
+            <h1><span id="year">--</span> years</h1>
+            <h1><span id="month">--</span> months</h1>
+            <h1><span id="day">--</span> days</h1>
+         </div>
+      </section>
+   </body>
+   <script src="index.js"></script>
+</html>
